@@ -1,0 +1,37 @@
+h1 {
+    color: #178888;
+    text-stroke: 1px rgb(63, 61, 61);
+    text-align: center;
+}
+body {
+    background: #fefefe;
+}
+.image img {
+    width: 100%;
+}
+
+#relaxation img {
+        width: 40%;
+}
+h2 {
+    text-decoration: underline;
+    margin-top: 1cm;
+    color: rgb(15, 107, 103);
+}
+p {
+    margin-top: 0.5em;
+    margin-bottom: 1.5em;
+}
+.thesis img {
+    width: 50%;
+}
+#quotes h4 {
+    margin: 0em;
+    color: rgb(185, 0, 93);
+}
+.header-link {
+    color: #425181;
+}
+a {
+    color: #248ba5;
+}
