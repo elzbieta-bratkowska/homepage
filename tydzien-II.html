@@ -1,46 +1,62 @@
 <!DOCTYPE html>
 <html lang="pl">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link href="style.css" rel="stylesheet" type="text/css">
-</head>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
 
-<body>
-    <header class ="top">
-        <nav>
-            <a href="index.html">Strona główna</a>
-            <a href="tydzien-I.html">Tydzień I mojej podróży</a>
-            <a href="tydzien-II.html">Tydzień II mojej podróży</a>
-            <a href="tydzien-III.html">Tydzień III mojej podróży</a>
-            <a href="tydzien-IV.html">Tydzień IV mojej podróży</a>
-        </nav>
+  <body>
+    <header class="top">
+      <nav>
+        <a class = "main-menu" href="index.html">Strona główna</a>
+        <a class = "main-menu" href="tydzien-I.html">Tydzień I mojej podróży</a>
+        <a class = "main-menu" href="tydzien-II.html">Tydzień II mojej podróży</a>
+        <a class = "main-menu" href="tydzien-III.html">Tydzień III mojej podróży</a>
+        <a class = "main-menu" href="tydzien-IV.html">Tydzień IV mojej podróży</a>
+      </nav>
     </header>
 
     <main>
-        <header>
-            <h1>Tydzień III mojej podróży</h1>
-            <a href="#lesson-one">Przejdź do lekcji 1</a> <br />
-            <a href="#lesson-two">Przejdź do lekcji 2</a> <br />
-            <a href="#lesson-tree">Przejdź do lekcji 3</a> <br />
-        </header>
+      <header>
+        <h1 class="heading">Tydzień II</h1>
+        <div class="image">
+          <img src="image_flowers.jpg" alt="Kwiaty" />
+        </div>
+      </header>
 
-        <section class="lessons">
-            <h2>Lekcje</h2>
-            <article id="lesson-one">
-                <h2>Lekcja I - Praca domowa z poprzedniego tygodnia</h2>
-                <p>Dupy nie urwało, ale nie wygląda to tragicznie. Zobaczymy co wniesie tydzień III.</p>
-                <h3>1. Schemat blokowy </h3>
-                <div class="thesis">
-                    <img src="schemat-blokowy.jpg" alt="Schemat blokowy" />
-                </div>
-            </article>
-        </section>
+      <article class="article-lessons-navigation">
+        <h2>Na skróty:</h2>
+        <a class="lesson-navigation" href="#lesson-one">Przejdź do lekcji 1</a>
+      </article>
+
+      <section class="lessons">
+        <h2>Notatki</h2>
+        <article id="lesson-one">
+          <h3>Lekcja I - Praca domowa z poprzedniego tygodnia</h3>
+          <p>
+            Dupy nie urwało, ale nie wygląda to tragicznie. Zobaczymy co wniesie
+            tydzień III.
+          </p>
+        </article>
+
+        <article class="thesis">
+          <h3>1. Schemat blokowy pisania pracy dyplomowej</h3>
+            <img src="schemat-blokowy.jpg" alt="Schemat blokowy" />
+        </article>
+      </section>
+
+      <section id="relaxation">
+        <h3>Na koniec coś na osłodę dnia</h3>
+        <img src="rottweiler.jpg" alt="rottweiler-puppies" />
+      </section>
     </main>
+
     <footer>
-        Wszelkie prawa do tej zacnej strony są zastrzeżone <a href="#top">Wróć na górę strony</a>
+      Wszelkie prawa do tej zacnej strony są zastrzeżone.<br/>
+      <a class="footer-navigation" href="#top">Wróć na górę</a>
     </footer>
     <script src="main.js"></script>
-</body>
+  </body>
+</html>

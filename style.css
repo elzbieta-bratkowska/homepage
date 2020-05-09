@@ -1,37 +1,105 @@
-h1 {
-    color: #178888;
-    text-stroke: 1px rgb(63, 61, 61);
-    text-align: center;
-}
 body {
-    background: #fefefe;
+  background: #ffffff;
+}
+
+main {
+  width: 900px;
+  margin: auto;
+}
+h2 {
+  text-decoration: underline;
+  margin-top: 10px;
+  color: rgb(15, 107, 103);
+}
+
+h3 {
+  margin-top: 23px;
+  margin-bottom: 3px;
+  color: rgb(15, 107, 103);
+}
+
+p {
+  margin-top: 4px;
+}
+
+nav {
+  width: fit-content;
+  margin: 10px auto;
+}
+
+footer {
+  width: 900px;
+  margin: 20px auto;
+  border-top: 4px dotted rgba(171, 155, 179, 0.333);
+  padding-top: 10px;
+  text-align: right;
+}
+
+.heading {
+  color: #178888;
+  -webkit-text-stroke: 1px rgb(63, 61, 61);
+  text-align: center;
 }
 .image img {
-    width: 100%;
+  width: 100%;
 }
 
 #relaxation img {
-        width: 40%;
+  width: 40%;
 }
-h2 {
-    text-decoration: underline;
-    margin-top: 1cm;
-    color: rgb(15, 107, 103);
+
+#quotes {
+  width: 900px;
 }
-p {
-    margin-top: 0.5em;
-    margin-bottom: 1.5em;
-}
+
 .thesis img {
-    width: 50%;
+  width: 80%;
 }
 .h4-index-style {
-    margin: 0em;
-    color: rgb(185, 0, 93);
+  margin-top: 12px;
+  margin-bottom: 0px;
+  color: rgb(185, 0, 93);
 }
 .header-link {
-    color: #425181;
+  color: #425181;
 }
-a {
-    color: #8cd811;
+.main-menu {
+  color: #86283d;
+  padding: 10px;
+  background: linear-gradient(#f1eeee 70%, #be6272);
+  margin: 10px 20px;
+  text-decoration: none;
+  display: inline-block;
+  border-radius: 7px;
+}
+.main-menu:hover {
+  color: #cf7f91;
+}
+.footer-navigation {
+  color: black;
+}
+.lesson-navigation {
+  text-align: center;
+  display: block;
+  padding: 4px;
+  margin: 2px;
+  text-decoration: none;
+  color: rgb(143, 140, 140);
+}
+.lesson-navigation:hover {
+  color: black;
+}
+
+.article-lessons-navigation {
+  display: inline-block;
+}
+.general-list {
+  padding-inline-start: 50px;
+  margin: 0;
+}
+.paragraph-link-http {
+  text-align: center;
+}
+.paragraph-java-js {
+  text-align: center;
 }

@@ -1,156 +1,285 @@
 <!DOCTYPE html>
 <html lang="pl">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link href="style.css" rel="stylesheet" type="text/css">
-</head>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
 
-<body>
-    <header class ="top">
-        <nav>
-            <a href="index.html">Strona główna</a>
-            <a href="tydzien-I.html">Tydzień I mojej podróży</a>
-            <a href="tydzien-II.html">Tydzień II mojej podróży</a>
-            <a href="tydzien-III.html">Tydzień III mojej podróży</a>
-            <a href="tydzien-IV.html">Tydzień IV mojej podróży</a>
-        </nav>
+  <body>
+    <header class="top">
+      <nav>
+        <a class="main-menu" href="index.html">Strona główna</a>
+        <a class="main-menu" href="tydzien-I.html">Tydzień I mojej podróży</a>
+        <a class="main-menu" href="tydzien-II.html">Tydzień II mojej podróży</a>
+        <a class="main-menu" href="tydzien-III.html"
+          >Tydzień III mojej podróży</a
+        >
+        <a class="main-menu" href="tydzien-IV.html">Tydzień IV mojej podróży</a>
+      </nav>
     </header>
 
     <main>
-        <header>
-            <h1>Tydzień III mojej podróży</h1>
-            <a href="#lesson-one">Przejdź do lekcji 1</a> <br />
-            <a href="#lesson-two">Przejdź do lekcji 2</a> <br />
-            <a href="#lesson-tree">Przejdź do lekcji 3</a> <br />
-        </header>
+      <header>
+        <h1 class="heading">Tydzień III</h1>
+        <div class="image">
+          <img src="image_flowers.jpg" alt="Kwiaty" />
+        </div>
+      </header>
 
-        <section class="lessons">
-            <h2>Lekcje</h2>
-            <article id="lesson-one">
-                <h2>Lekcja I - Praca domowa z poprzedniego tygodnia</h2>
-                <p>Dupy nie urwało, ale nie wygląda to tragicznie. Zobaczymy co wniesie tydzień III.</p>
-            </article>
-            <article id="lesson-two">
-                <h2>Lekcja II - Kanban</h2>
-                <p>Śledzenie postępów pracy - system już wdrożyłam w swojej pracy :) <br />
-                    Obowiązki dzielimy na trzy kategorie: TO DO, DOING (najlepiej wybierz 1), DONE.<br />
-                    Korzystamy z wersji online trello.com ---> Szybki skrót <a href="https://trello.com/home">TRELLO</a>
-                </p>
-            </article>
-            <article id="lesson-three">
-                <h2>Lekcja III - HTML 2</h2>
-                <h3>Nowe znaczniki:</h3>
-                <p>Tu kiedyś będzie lista z podpunktami: <br />
-                    &lt;br/&gt; - nowa linia. Nie dublujemy w celu uzyskania większego odstępu!<br />
-                    &lt;b&gt; &lt;/b&gt; - pogrubienie tekstu. Nie ma znaczenia semantycznego (tylko wyróżnienie
-                    tekstu)<br />
-                    &lt;i&gt; &lt;/i&gt; - kursywa. Nie ma znaczenia semantycznego (tylko wyróżnienie tekstu)<br />
-                    &lt;strong&gt; &lt;/strong&gt; - pogrubienie, ale dodatkowo podkreśla wysoką istotność frazy<br />
-                    &lt;em&gt; &lt;/em&gt; - podkreśla, że tekst może mieć inne znaczenie (np. ironia)<br />
-                    &lt;a href="<i>tutaj ścieżka dostępu</i>"&gt;nazwa hiperłącza &lt;/a&gt; - linki/łącza
-                    wewnątrz dokumentu<br />
-                    &lt;element id="moj-identyfikator"&gt; - atrybut id identyfikuje element<br />
-                    <b>WAŻNE!!!! Jeżeli w &lt;a &gt; &lt;/a&gt; odwołujemy się do id przed nazwą musi być #!</b><br />
-                    &lt;nav&gt; - nawigacja <br />
-                    Dodatkowy &lt;header&gt; &lt;/header&gt; - w "body" ale przed "main" - Wpisujemy tam elementy, które
-                    chcemy powtarzać na wszystkich stronach - nagłówek powtarzalny. Jeżeli stopka ma być powtarzalna to
-                    przenosimy ją za "main" ale w "body"<br />
-                    &lt;img src="<i>ścieżka dostępu</i>" alt="<i>tekst alternatywny</i>"/&gt; - wstaw obrazek. Inne zamknięcie!<br />
-                </p>
-            </article>
-            <article id="lesson-four">
-                <h2>Lekcja IV - Historia o wężu, kebabie, wielbłądzie i Pascalu</h2>
-                <p>Nazwy zapisujemy bez polskich znaków, bez spacji, najlepiej po angielsku, trzymamy sie jednego schematu.<br />
-                    1. camelCase<br />
-                    2. hebab-case <br />
-                    3. snake_case <br />
-                    4. PascalCase   
-                </p>
-            </article>
-            <article id="lesson-five">
-                <h2>Lekcja V - CSS II</h2>
-                <p>Styl przy znaczniku z wykorzystaniem atrybutu <i>style</i> nazywamy stylem <i>inline</i>.<br/>
-                &lt;znacznik style="color:yellow;"&gt;treść&lt;/znacznik&gt;  ---> ogólnie nie polecam  <br/>
-                &lt;znacznik class="name"&gt;treść&lt;/znacznik&gt; nazwa zapisana kebab-case <br/>
-                &lt;znacznik id="name"&gt;treść&lt;/znacznik&gt; nazwa zapisana kebab-case <br/>
-                W css odwołujemy się do klasy za pomocą .name a do id za pomocą #id. ID używaj tylko do jednego elementu na stronie.<br/>
-                Zmiana koloru linku w nav: nav a{color:} Pamiętaj aby nie korzystać z !important - ponieważ nadpisuje styl, nie zwraca uwagi na inne właściwości.<br/>
-                Specyficzność: <br/>
-                1. !important <br/>
-                2. style="" <br/>
-                3. #name<br/>
-                4. .name<br/>
-                5. element<br/>
-                Jeżeli specyficzności się równoważą to wygrywa styl zapisany niżej. Ogólnie unikamy zagnieżdżenia. <br/>
-                <a href="https://coolors.co/">Link do strony z kolorkami</a>
-                </p>
-            </article>
-            <article id="lesson-six">
-                <h2>Lekcja VI - Jak działa Internet i przeglądarka</h2>
-                <p>HTTP - protokół, którego używa przeglądarka (protokół do transportowania htmla + reszta). HTTPS - jest szyfrowany, obecnie rekomendowany. URL - adres jaki wpisujemy <br/>
-                https:// - protokół <br/>
-                cotenfrontend.pl - host(adres serwera) <br/>
-                :443 - port (nie widzimy, przeglądarka automatycznie to dopisuje)- na którym porcie na serwerze znajdują się pliki<br/>
-                / - super ważny! (root) ścieżki względne i bezwzględne - lepiej stosuj: /img/... (druga z wymienionych)<br/>
-                index.html - ścieżka dostępu do zasobu <br/>
-                ?parametr=wartość - parametry<br/>
-                Wpisuje adres www -> przeglądarka szuka serwera [DNS - tlumaczy nazwy pisane na adresy IP] -> 
-                Po znalezieniu serwera odpytuje go o index -> serwer wysyła zawartość html do przeglądarki -> przeglądarka wczytuje i szuka 
-                dodatkowych zasobów (obrazki, style itp.) i dla każdego z zasobów wykonuje zapytanie - > przeglądarka sprawdza składnie strony i ją generuje.<br/>
-                KODY ODPOWIEDZI HTTP: <br/>
-                -200 - jest ok <br/>
-                -30x - szukasz w złym miejscu - przekieruję Cię w dobre (bo wiem gdzie) <br/>
-                -404 - nie mam tego, czego potrzebujesz... Sorry<br/>
-                -50x - błędy wewnętrzne serwera (nie możemy z tym nic zrobić)<br/>
+      <article class="article-lessons-navigation">
+        <h2>Na skróty:</h2>
+        <a class="lesson-navigation" href="#lesson-one">Przejdź do lekcji 1</a>
+        <a class="lesson-navigation" href="#lesson-two">Przejdź do lekcji 2</a>
+        <a class="lesson-navigation" href="#lesson-tree">Przejdź do lekcji 3</a>
+        <a class="lesson-navigation" href="#lesson-four">Przejdź do lekcji 4</a>
+        <a class="lesson-navigation" href="#lesson-five">Przejdź do lekcji 5</a>
+        <a class="lesson-navigation" href="#lesson-six">Przejdź do lekcji 6</a>
+        <a class="lesson-navigation" href="#lesson-seven"
+          >Przejdź do lekcji 7</a
+        >
+        <a class="lesson-navigation" href="#lesson-eight"
+          >Przejdź do lekcji 8</a
+        >
+      </article>
 
-                </p>
-            </article>
+      <section class="lessons">
+        <h2>Notatki</h2>
+        <article id="lesson-one">
+          <h3>Lekcja I - Praca domowa z poprzedniego tygodnia</h3>
+          <p>
+            Zrobione :)
+          </p>
+        </article>
+        <article id="lesson-two">
+          <h3>Lekcja II - Kanban</h3>
+          <p>
+            Śledzenie postępów pracy - system już wdrożyłam w swojej pracy :)
+            Korzystamy z wersji online
+            <a href="https://trello.com/home">trello.com</a><br />
+          </p>
+          <p>Obowiązki dzielimy na trzy kategorie:</p>
+          <ul class="general-list">
+            <li>TO DO</li>
+            <li>DOING (najlepiej wybierz 1)</li>
+            <li>DONE</li>
+          </ul>
+        </article>
+        <article id="lesson-three">
+          <h3>Lekcja III - HTML 2</h3>
+          <p>
+            <b>Nowe znaczniki:</b>
+          </p>
+          <ul class="general-list">
+            <li>
+              &lt;br/&gt; - nowa linia (nie dublujemy w celu uzyskania większego
+              odstępu!)
+            </li>
+            <li>
+              &lt;b&gt; &lt;/b&gt; - pogrubienie tekstu (nie ma znaczenia
+              semantycznego
+            </li>
+            <li>
+              &lt;i&gt; &lt;/i&gt; - kursywa (nie ma znaczenia semantycznego)
+            </li>
+            <li>
+              &lt;strong&gt; &lt;/strong&gt; - pogrubienie, ale dodatkowo
+              podkreśla wysoką istotność frazy
+            </li>
+            <li>
+              &lt;em&gt; &lt;/em&gt; - podkreśla, że tekst może mieć inne
+              znaczenie (np. ironia)
+            </li>
+            <li>
+              &lt;a href="<i>tutaj ścieżka dostępu</i>"&gt;nazwa hiperłącza
+            </li>
+            <li>&lt;/a&gt; - linki/łącza wewnątrz dokumentu</li>
+            <li>
+              &lt;element id="moj-identyfikator"&gt; - atrybut id identyfikuje
+              element
+            </li>
+            <li>&lt;nav&gt; - nawigacja</li>
+            <li>
+              &lt;img src="<i>ścieżka dostępu</i>" alt="<i>tekst alternatywny</i
+              >"/&gt; - wstaw obrazek. Inne zamknięcie!
+            </li>
+          </ul>
+          <br />
+          <p>
+            <b>WAŻNE!!!</b>
+          </p>
+          <ol>
+            <li>
+              Jeżeli w &lt;a &gt; &lt;/a&gt; odwołujemy się do id przed nazwą
+              musi być #
+            </li>
+            <li>
+              Dodatkowy &lt;header&gt; &lt;/header&gt; - w "body" ale przed
+              "main" (Wpisujemy tam elementy, które chcemy powtarzać na
+              wszystkich stronach. Jeżeli stopka ma być powtarzana to przenosimy
+              ją za "main" ale w "body")
+            </li>
+          </ol>
+        </article>
+        <article id="lesson-four">
+          <h3>Lekcja IV - Historia o wężu, kebabie, wielbłądzie i Pascalu</h3>
+          <p>
+            Nazwy zapisujemy bez polskich znaków, bez spacji, najlepiej po
+            angielsku, trzymamy sie jednego schematu.
+          </p>
+          <ol>
+            <li>camelCase</li>
+            <li>hebab-case</li>
+            <li>snake_case</li>
+            <li>PascalCase</li>
+          </ol>
+        </article>
+        <article id="lesson-five">
+          <h3>Lekcja V - CSS II</h3>
+          <p>
+            Styl przy znaczniku z wykorzystaniem atrybutu <i>style</i> nazywamy
+            stylem <i>inline</i>.
+          </p>
+          <ol>
+            <li>
+              &lt;znacznik style="color:yellow;"&gt;treść&lt;/znacznik&gt; --->
+              ogólnie nie polecam
+            </li>
+            <li>
+              &lt;znacznik class="name"&gt;treść&lt;/znacznik&gt; nazwa zapisana
+              kebab-case
+            </li>
+            <li>
+              &lt;znacznik id="name"&gt;treść&lt;/znacznik&gt; nazwa zapisana
+              kebab-case
+            </li>
+          </ol>
+          <p>
+            W css odwołujemy się do klasy za pomocą .name a do id za pomocą #id.
+            ID używaj tylko do jednego elementu na stronie.<br />
+            Zmiana koloru linku w nav: nav a{color:} Pamiętaj aby nie korzystać
+            z !important - ponieważ nadpisuje styl (nie zwraca uwagi na inne
+            właściwości)
+          </p>
+          <p>
+            Specyficzność:
+          </p>
+          <ol>
+            <li>!important</li>
+            <li>style=""</li>
+            <li>#name</li>
+            <li>.name</li>
+            <li>element</li>
+          </ol>
+          <p>
+            Jeżeli specyficzności się równoważą to wygrywa styl zapisany niżej.
+            Ogólnie unikamy zagnieżdżenia. <br />
+            Link do strony z kolorkami:
+            <a href="https://coolors.co/">coolors.co</a>
+          </p>
+        </article>
+        <article id="lesson-six">
+          <h3>Lekcja VI - Jak działa Internet i przeglądarka</h3>
+          <p>
+            HTTP - protokół, którego używa przeglądarka (protokół do
+            transportowania htmla + reszta). HTTPS - jest szyfrowany, obecnie
+            rekomendowany. <br />
+            URL - adres jaki wpisujemy <br />
+          </p>
+          <p class="paragraph-link-http">
+            https://cotenfrontend.pl:443/index.html?parametr=wartość
+          </p>
+          <ol type="a">
+            <li>https:// - protokół</li>
+            <li>cotenfrontend.pl - host(adres serwera)</li>
+            <li>
+              :443 - port (nie widzimy, przeglądarka automatycznie to dopisuje)-
+              na którym porcie na serwerze znajdują się pliki
+            </li>
+            <li>
+              / - super ważny! (root) ścieżki względne i bezwzględne - lepiej
+              stosuj: /img/... (druga z wymienionych w prezentacji)
+            </li>
+            <li>index.html - ścieżka dostępu do zasobu</li>
+            <li>?parametr=wartość - parametry</li>
+          </ol>
+          <p>
+            Wpisuje adres www -> przeglądarka szuka serwera [DNS - tlumaczy
+            nazwy pisane na adresy IP] -> Po znalezieniu serwera odpytuje go o
+            index -> serwer wysyła zawartość html do przeglądarki ->
+            przeglądarka wczytuje i szuka dodatkowych zasobów (obrazki, style
+            itp.) i dla każdego z zasobów wykonuje zapytanie - > przeglądarka
+            sprawdza składnie strony i ją generuje.
+          </p>
+          <p>
+            KODY ODPOWIEDZI HTTP: <br />
+            - 200 - jest ok <br />
+            - 30x - szukasz w złym miejscu - przekieruję Cię w dobre (bo wiem
+            gdzie) <br />
+            - 404 - nie mam tego, czego potrzebujesz... Sorry<br />
+            - 50x - błędy wewnętrzne serwera (nie możemy z tym nic zrobić)<br />
+          </p>
+        </article>
 
-            <article id="lesson-seven">
-                <h2>Lekcja VII - JavaScript</h2>
-                <p>Pamiętaj że Java != JavaScript. Uczymy się ECMAScript 2015+ (ES6+) - jest to ustandaryzowany przez 
-                organizację ECMA skryptowy język programowania. JS implementuje rzeczy ze specyfikacji ECMAScript. ES6 wprowadza wiele udogodnień.
-                Nowe feature'y mogą nie być wspierane we wszystkich przeglądarkach, ale są na to sposoby. <br/>
-                JS składa sie z:<br/>
-                -wartości - istniejący zbiór, niezmienialne<br/>
-                -operacji porównywania <br/>
-                -literałów <br/>
-                -zmiennych <br/>
-                - obiektów <br/>
-                -funkcji <br/>
-                Mają swój znacznik &lt;script&gt;<br/>
-                Pierwszy jaki poznamy to alert(''); - wyświetla komunikat po załadowaniu strony (pamiętaj o ciapkach!)<br/>
-                console.log('') - wyświetla tekst w konsoli<br/>
-                Ogólnie tekst wypisujemy w ciapkach pojedynczych '' a zmienne bez niczego. Jeżeli chcemy łaczyć te dwie rzeczy to stosujemy ~tekst ${zmienna}~
-                </p>
-            </article>
-            <article id="lesson-eight">
-                <h2>Lekcja VIII - Terminal</h2>
-                <p>dir - wypisuje zawartość katalogu <br/>
-                    cd C:\ - przechodzi do dysku C <br/>
-                    cd dev  - otwiera folder dev <br/>
-                    mkdir - stwórz katalot (po spacji podaj nazwę) <br/>
-                    code . - otwiera Visual Studio Code <br/>
-                    cd .. - przenosi nas katalog wyżej <br/>
-                    cd - wyświetla aktualną ścieżkę
+        <article id="lesson-seven">
+          <h3>Lekcja VII - JavaScript</h3>
+          <p>
+            Pamiętaj że:
+          </p>
+          <p class="paragraph-java-js">
+            Java != JavaScript
+          </p>
 
-
-                </p>
-            </article>
-            </section>
-            <section id="relaxation">
-                <h2>Na koniec coś na osłodę dnia</h2>
-                <img src="husky.jpg" alt="Najlepszy pieseł na świecie">
-            </section>
-
+          <p>
+            Uczymy się ECMAScript 2015+ (ES6+) - jest to ustandaryzowany przez
+            organizację ECMA skryptowy język programowania. JS implementuje
+            rzeczy ze specyfikacji ECMAScript. ES6 wprowadza wiele udogodnień.
+            Nowe feature'y mogą nie być wspierane we wszystkich przeglądarkach,
+            ale są na to sposoby.
+          </p>
+          <p>
+            JS składa sie z:
+          </p>
+          <ul>
+            <li>wartości - istniejący zbiór, niezmienialne</li>
+            <li>operacji porównywania</li>
+            <li>literałów</li>
+            <li>zmiennych</li>
+            <li>obiektów</li>
+            <li>funkcji</li>
+          </ul>
+          <p>
+            Mają swój znacznik &lt;script&gt; Pierwszy jaki poznamy to
+            alert(''); - wyświetla komunikat po załadowaniu strony (pamiętaj o
+            ciapkach!). Drugi to console.log('') - wyświetla tekst w konsoli.<br />
+            Ogólnie tekst wypisujemy w ciapkach pojedynczych 'a zmienne bez
+            niczego. Jeżeli chcemy łaczyć te dwie rzeczy to stosujemy ~tekst
+            ${zmienna}~
+          </p>
+        </article>
+        <article id="lesson-eight">
+          <h3>Lekcja VIII - Terminal</h3>
+          <ul>
+            <li>dir - wypisuje zawartość katalogu</li>
+            <li>cd C:\ - przechodzi do dysku C</li>
+            <li>cd dev - otwiera folder dev</li>
+            <li>mkdir - stwórz katalot (po spacji podaj nazwę)</li>
+            <li>code . - otwiera Visual Studio Code</li>
+            <li>cd .. - przenosi nas katalog wyżej</li>
+            <li>cd - wyświetla aktualną ścieżkę</li>
+          </ul>
+        </article>
+      </section>
+      <section id="relaxation">
+        <h3>Na koniec coś na osłodę dnia</h3>
+        <img src="husky.jpg" alt="Najlepszy pieseł na świecie" />
+      </section>
     </main>
 
     <footer>
-        Wszelkie prawa do tej zacnej strony są zastrzeżone <a href="#top">Wróć na górę strony</a>
+      Wszelkie prawa do tej zacnej strony są zastrzeżone.<br />
+      <a class="footer-navigation" href="#top">Wróć na górę</a>
     </footer>
-</body>
-
+  </body>
 </html>
