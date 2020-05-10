@@ -22,11 +22,6 @@ p {
   margin-top: 4px;
 }
 
-nav {
-  width: fit-content;
-  margin: 10px auto;
-}
-
 footer {
   width: 900px;
   margin: 20px auto;
@@ -35,35 +30,53 @@ footer {
   text-align: right;
 }
 
+.footer__navigation {
+  color: black;
+}
+
+.general-list {
+  padding-inline-start: 50px;
+  margin: 0;
+}
+
 .heading {
   color: #178888;
   -webkit-text-stroke: 1px rgb(63, 61, 61);
   text-align: center;
 }
-.image img {
+
+.heading__image {
   width: 100%;
 }
 
-#relaxation img {
-  width: 40%;
+.lesson__homework-paragraph--js {
+  text-align: center;
+  color: rgb(52, 187, 192);
+  font-weight: bold;
 }
 
-#quotes {
-  width: 900px;
+.lessons-navigation {
+  display: inline-block;
 }
 
-.thesis img {
-  width: 80%;
+.lessons-navigation__lesson {
+  display: block;
+  padding: 4px;
+  margin: 2px;
+  text-decoration: none;
+  color: rgb(143, 140, 140);
 }
-.h4-index-style {
-  margin-top: 12px;
-  margin-bottom: 0px;
-  color: rgb(185, 0, 93);
+
+.lessons-navigation__lesson:hover {
+  color: black;
 }
-.header-link {
-  color: #425181;
+
+.navigation {
+  width: fit-content;
+  margin: 10px auto;
 }
-.main-menu {
+
+.navigation__link {
   color: #86283d;
   padding: 10px;
   background: linear-gradient(#f1eeee 70%, #be6272);
@@ -72,34 +85,33 @@ footer {
   display: inline-block;
   border-radius: 7px;
 }
-.main-menu:hover {
+.navigation__link:hover {
   color: #cf7f91;
 }
-.footer-navigation {
-  color: black;
-}
-.lesson-navigation {
-  text-align: center;
-  display: block;
-  padding: 4px;
-  margin: 2px;
-  text-decoration: none;
-  color: rgb(143, 140, 140);
-}
-.lesson-navigation:hover {
-  color: black;
-}
 
-.article-lessons-navigation {
-  display: inline-block;
-}
-.general-list {
-  padding-inline-start: 50px;
-  margin: 0;
-}
 .paragraph-link-http {
   text-align: center;
 }
 .paragraph-java-js {
   text-align: center;
+}
+
+.quotes {
+  width: 900px;
+}
+
+.quote {
+  margin-top: 12px;
+  margin-bottom: 0px;
+  color: rgb(185, 0, 93);
+}
+.relaxation {
+  margin-top: 50px;
+}
+.relaxation__puppy {
+  width: 40%;
+}
+
+.thesis__image {
+  width: 90%;
 }

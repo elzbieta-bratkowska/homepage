@@ -8,32 +8,48 @@
   </head>
 
   <body>
-    <header class="top">
-      <nav>
-        <a class = "main-menu" href="index.html">Strona główna</a>
-        <a class = "main-menu" href="tydzien-I.html">Tydzień I mojej podróży</a>
-        <a class = "main-menu" href="tydzien-II.html">Tydzień II mojej podróży</a>
-        <a class = "main-menu" href="tydzien-III.html">Tydzień III mojej podróży</a>
-        <a class = "main-menu" href="tydzien-IV.html">Tydzień IV mojej podróży</a>
+    <header id="top">
+      <nav class="navigation">
+        <a class="navigation__link" href="index.html">Strona główna</a>
+        <a class="navigation__link" href="tydzien-I.html"
+          >Tydzień I mojej podróży</a
+        >
+        <a class="navigation__link" href="tydzien-II.html"
+          >Tydzień II mojej podróży</a
+        >
+        <a class="navigation__link" href="tydzien-III.html"
+          >Tydzień III mojej podróży</a
+        >
+        <a class="navigation__link" href="tydzien-IV.html"
+          >Tydzień IV mojej podróży</a
+        >
       </nav>
     </header>
 
     <main>
       <header>
-          <h1 class="heading">Tydzień IV</h1>
-          <div class="image">
-            <img src="image_flowers.jpg" alt="Kwiaty" />
-          </div>
+        <h1 class="heading">Tydzień IV</h1>
+        <div class="heading__image-container">
+          <img class="heading__image" src="image_flowers.jpg" alt="Kwiaty" />
+        </div>
       </header>
 
-      <article class="article-lessons-navigation">
+      <article class="lessons-navigation">
         <h2>Na skróty:</h2>
-        <a class="lesson-navigation" href="#lesson-one">Przejdź do lekcji 1</a>
+        <a class="lessons-navigation__lesson" href="#lesson-one"
+          >Przejdź do lekcji 1</a
+        >
+        <a class="lessons-navigation__lesson" href="#lesson-two"
+          >Przejdź do streszczenia</a
+        >
+        <a class="lessons-navigation__lesson" href="#lesson-homework"
+          >Przejdź do pracy domowej</a
+        >
       </article>
 
       <section class="lessons">
         <h2>Notatki</h2>
-        <article id="lesson-one">
+        <article class="lesson-one">
           <h3>Lekcja I - Praca domowa z poprzedniego tygodnia</h3>
           <p>
             Zrobione :)
@@ -41,19 +57,33 @@
         </article>
         <article id="lesson-two">
           <h3>Streszczenie</h3>
-          <p>Dużo nowych rzeczy: pudełka (margin, border, padding), GIT, GitHub. Więcej informacji w prezentacjach i filmach.
+          <p>
+            Dużo nowych rzeczy: pudełka (margin, border, padding), GIT, GitHub.
+            Więcej informacji w prezentacjach i filmach.
           </p>
-          </article>
+        </article>
+        <article id="lesson-homework">
+          <h3>Praca domowa</h3>
+          <p>Tu będzie wstawiony tekst z JS:</p>
+          <p class="lesson__homework-paragraph--js">
+            Zmień tekst
+          </p>
+        </article>
       </section>
-      <section id="relaxation">
+      <section class="relaxation">
         <h3>Na koniec coś na osłodę dnia</h3>
-        <img src="samoyed-img.jpeg" alt="Samoyed-puppy" />
+        <img
+          class="relaxation__puppy"
+          src="samoyed-img.jpeg"
+          alt="Samoyed-puppy"
+        />
       </section>
     </main>
 
     <footer>
-      Wszelkie prawa do tej zacnej strony są zastrzeżone.<br/>
-      <a class="footer-navigation" href="#top">Wróć na górę</a>
+      Wszelkie prawa do tej zacnej strony są zastrzeżone.<br />
+      <a class="footer__navigation" href="#top">Wróć na górę</a>
     </footer>
+    <script src="main.js"></script>
   </body>
 </html>

@@ -8,27 +8,37 @@
   </head>
 
   <body>
-    <header class="top">
-      <nav>
-        <a class="main-menu" href="index.html">Strona główna</a>
-        <a class="main-menu" href="tydzien-I.html">Tydzień I mojej podróży</a>
-        <a class="main-menu" href="tydzien-II.html">Tydzień II mojej podróży</a>
-        <a class="main-menu" href="tydzien-III.html">Tydzień III mojej podróży</a>
-        <a class="main-menu" href="tydzien-IV.html">Tydzień IV mojej podróży</a>
+    <header id="top">
+      <nav class="navigation">
+        <a class="navigation__link" href="index.html">Strona główna</a>
+        <a class="navigation__link" href="tydzien-I.html"
+          >Tydzień I mojej podróży</a
+        >
+        <a class="navigation__link" href="tydzien-II.html"
+          >Tydzień II mojej podróży</a
+        >
+        <a class="navigation__link" href="tydzien-III.html"
+          >Tydzień III mojej podróży</a
+        >
+        <a class="navigation__link" href="tydzien-IV.html"
+          >Tydzień IV mojej podróży</a
+        >
       </nav>
     </header>
 
     <main>
       <header>
         <h1 class="heading">Tydzień I</h1>
-        <div class="image">
-          <img src="image_flowers.jpg" alt="Kwiaty" />
+        <div class="heading__image-container">
+          <img class="heading__image" src="image_flowers.jpg" alt="Kwiaty" />
         </div>
       </header>
 
-      <article class="article-lessons-navigation">
+      <article class="lessons-navigation">
         <h2>Na skróty:</h2>
-        <a class="lesson-navigation" href="#lesson-one">Przejdź do lekcji 1</a>
+        <a class="lessons-navigation__lesson" href="#lesson-one"
+          >Przejdź do lekcji 1</a
+        >
       </article>
 
       <section class="lessons">
@@ -48,21 +58,25 @@
             <li>Bądź cześcią społeczności</li>
             <li>Nie bój się pytać</li>
           </ol>
-          <p> 
+          <p>
             Dożywotni dostęp do materiałów - jak nie teraz to na emeryturze!<br />
             .....cdn.....
           </p>
         </article>
       </section>
-      <section id="relaxation">
+      <section class="relaxation">
         <h3>Na koniec coś na osłodę dnia</h3>
-        <img src="bernese.jpg" alt="bernese-puppies" />
+        <img
+          class="relaxation__puppy"
+          src="bernese.jpg"
+          alt="bernese-puppies"
+        />
       </section>
     </main>
 
     <footer>
       Wszelkie prawa do tej zacnej strony są zastrzeżone.<br />
-      <a class="footer-navigation" href="#top">Wróć na górę</a>
+      <a class="footer__navigation" href="#top">Wróć na górę</a>
     </footer>
     <script src="main.js"></script>
   </body>

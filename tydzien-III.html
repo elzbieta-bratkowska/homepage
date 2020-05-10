@@ -8,38 +8,56 @@
   </head>
 
   <body>
-    <header class="top">
-      <nav>
-        <a class="main-menu" href="index.html">Strona główna</a>
-        <a class="main-menu" href="tydzien-I.html">Tydzień I mojej podróży</a>
-        <a class="main-menu" href="tydzien-II.html">Tydzień II mojej podróży</a>
-        <a class="main-menu" href="tydzien-III.html"
+    <header id="top">
+      <nav class="navigation">
+        <a class="navigation__link" href="index.html">Strona główna</a>
+        <a class="navigation__link" href="tydzien-I.html"
+          >Tydzień I mojej podróży</a
+        >
+        <a class="navigation__link" href="tydzien-II.html"
+          >Tydzień II mojej podróży</a
+        >
+        <a class="navigation__link" href="tydzien-III.html"
           >Tydzień III mojej podróży</a
         >
-        <a class="main-menu" href="tydzien-IV.html">Tydzień IV mojej podróży</a>
+        <a class="navigation__link" href="tydzien-IV.html"
+          >Tydzień IV mojej podróży</a
+        >
       </nav>
     </header>
 
     <main>
       <header>
         <h1 class="heading">Tydzień III</h1>
-        <div class="image">
-          <img src="image_flowers.jpg" alt="Kwiaty" />
+        <div class="heading__image-container">
+          <img class="heading__image" src="image_flowers.jpg" alt="Kwiaty" />
         </div>
       </header>
 
-      <article class="article-lessons-navigation">
+      <article class="lessons-navigation">
         <h2>Na skróty:</h2>
-        <a class="lesson-navigation" href="#lesson-one">Przejdź do lekcji 1</a>
-        <a class="lesson-navigation" href="#lesson-two">Przejdź do lekcji 2</a>
-        <a class="lesson-navigation" href="#lesson-tree">Przejdź do lekcji 3</a>
-        <a class="lesson-navigation" href="#lesson-four">Przejdź do lekcji 4</a>
-        <a class="lesson-navigation" href="#lesson-five">Przejdź do lekcji 5</a>
-        <a class="lesson-navigation" href="#lesson-six">Przejdź do lekcji 6</a>
-        <a class="lesson-navigation" href="#lesson-seven"
+        <a class="lessons-navigation__lesson" href="#lesson-one"
+          >Przejdź do lekcji 1</a
+        >
+        <a class="lessons-navigation__lesson" href="#lesson-two"
+          >Przejdź do lekcji 2</a
+        >
+        <a class="lessons-navigation__lesson" href="#lesson-three"
+          >Przejdź do lekcji 3</a
+        >
+        <a class="lessons-navigation__lesson" href="#lesson-four"
+          >Przejdź do lekcji 4</a
+        >
+        <a class="lessons-navigation__lesson" href="#lesson-five"
+          >Przejdź do lekcji 5</a
+        >
+        <a class="lessons-navigation__lesson" href="#lesson-six"
+          >Przejdź do lekcji 6</a
+        >
+        <a class="lessons-navigation__lesson" href="#lesson-seven"
           >Przejdź do lekcji 7</a
         >
-        <a class="lesson-navigation" href="#lesson-eight"
+        <a class="lessons-navigation__lesson" href="#lesson-eight"
           >Przejdź do lekcji 8</a
         >
       </article>
@@ -109,7 +127,7 @@
           <p>
             <b>WAŻNE!!!</b>
           </p>
-          <ol>
+          <ol class="general-list">
             <li>
               Jeżeli w &lt;a &gt; &lt;/a&gt; odwołujemy się do id przed nazwą
               musi być #
@@ -128,7 +146,7 @@
             Nazwy zapisujemy bez polskich znaków, bez spacji, najlepiej po
             angielsku, trzymamy sie jednego schematu.
           </p>
-          <ol>
+          <ol class="general-list">
             <li>camelCase</li>
             <li>hebab-case</li>
             <li>snake_case</li>
@@ -141,7 +159,7 @@
             Styl przy znaczniku z wykorzystaniem atrybutu <i>style</i> nazywamy
             stylem <i>inline</i>.
           </p>
-          <ol>
+          <ol class="general-list">
             <li>
               &lt;znacznik style="color:yellow;"&gt;treść&lt;/znacznik&gt; --->
               ogólnie nie polecam
@@ -165,7 +183,7 @@
           <p>
             Specyficzność:
           </p>
-          <ol>
+          <ol class="general-list">
             <li>!important</li>
             <li>style=""</li>
             <li>#name</li>
@@ -190,7 +208,7 @@
           <p class="paragraph-link-http">
             https://cotenfrontend.pl:443/index.html?parametr=wartość
           </p>
-          <ol type="a">
+          <ol class="general-list" type="a">
             <li>https:// - protokół</li>
             <li>cotenfrontend.pl - host(adres serwera)</li>
             <li>
@@ -241,7 +259,7 @@
           <p>
             JS składa sie z:
           </p>
-          <ul>
+          <ul class="general-list">
             <li>wartości - istniejący zbiór, niezmienialne</li>
             <li>operacji porównywania</li>
             <li>literałów</li>
@@ -260,7 +278,7 @@
         </article>
         <article id="lesson-eight">
           <h3>Lekcja VIII - Terminal</h3>
-          <ul>
+          <ul class="general-list">
             <li>dir - wypisuje zawartość katalogu</li>
             <li>cd C:\ - przechodzi do dysku C</li>
             <li>cd dev - otwiera folder dev</li>
@@ -271,15 +289,20 @@
           </ul>
         </article>
       </section>
-      <section id="relaxation">
+      <section class="relaxation">
         <h3>Na koniec coś na osłodę dnia</h3>
-        <img src="husky.jpg" alt="Najlepszy pieseł na świecie" />
+        <img
+          class="relaxation__puppy"
+          src="husky.jpg"
+          alt="Najlepszy pieseł na świecie"
+        />
       </section>
     </main>
 
     <footer>
       Wszelkie prawa do tej zacnej strony są zastrzeżone.<br />
-      <a class="footer-navigation" href="#top">Wróć na górę</a>
+      <a class="footer__navigation" href="#top">Wróć na górę</a>
     </footer>
+    <script src="main.js"></script>
   </body>
 </html>

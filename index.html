@@ -8,28 +8,36 @@
   </head>
 
   <body>
-    <header class="top">
-      <nav>
-        <a class = "main-menu" href="index.html">Strona główna</a>
-        <a class = "main-menu" href="tydzien-I.html">Tydzień I mojej podróży</a>
-        <a class = "main-menu" href="tydzien-II.html">Tydzień II mojej podróży</a>
-        <a class = "main-menu" href="tydzien-III.html">Tydzień III mojej podróży</a>
-        <a class = "main-menu" href="tydzien-IV.html">Tydzień IV mojej podróży</a>
+    <header id="top">
+      <nav class="navigation">
+        <a class="navigation__link" href="index.html">Strona główna</a>
+        <a class="navigation__link" href="tydzien-I.html"
+          >Tydzień I mojej podróży</a
+        >
+        <a class="navigation__link" href="tydzien-II.html"
+          >Tydzień II mojej podróży</a
+        >
+        <a class="navigation__link" href="tydzien-III.html"
+          >Tydzień III mojej podróży</a
+        >
+        <a class="navigation__link" href="tydzien-IV.html"
+          >Tydzień IV mojej podróży</a
+        >
       </nav>
     </header>
 
     <main>
       <header>
         <h1 class="heading">Dziennik młodego programisty</h1>
-        <div class="image">
-          <img src="image_flowers.jpg" alt="Kwiaty" />
+        <div class="heading__image-container">
+          <img class="heading__image" src="image_flowers.jpg" alt="Kwiaty" />
         </div>
       </header>
 
       <section id="quotes">
         <h3><strong>Cytaty na lepszy dzień</strong></h3>
         <article>
-          <h4 class="h4-index-style">
+          <h4 class="quote">
             <em>"Bardzo nie lubię obierać ziemniaków"~ Krystyna Czubówna</em>
           </h4>
           <p>
@@ -37,10 +45,10 @@
           </p>
         </article>
         <article>
-          <h4 class="h4-index-style">
-            <em
-              >"Biorą się za rap a nie wiedzą nawet jak"~ Krzysztof Krawczyk</em
-            >
+          <h4 class="quote">
+            <em>
+              "Biorą się za rap a nie wiedzą nawet jak"~ Krzysztof Krawczyk
+            </em>
           </h4>
           <p>
             Inny cytat to:"Jestem hardkorem. Mam na to certyfikaty 4. Robię w
@@ -48,13 +56,13 @@
           </p>
         </article>
         <article>
-          <h4 class="h4-index-style">
+          <h4 class="quote">
             <em>"To jest amelinium"~ Jan Brzechwa</em>
           </h4>
           <p>Inny cytat to:"Szyny były złe a podwozie... też było złe"</p>
         </article>
         <article>
-          <h4 class="h4-index-style">
+          <h4 class="quote">
             <em
               >"Cały czas tłuką, ale to tak tłuką... całe dnie, całe noce tluką"
               "~ Michael Jackson</em
@@ -71,8 +79,8 @@
     </main>
 
     <footer>
-      Wszelkie prawa do tej zacnej strony są zastrzeżone.<br/>
-      <a class="footer-navigation" href="#top">Wróć na górę</a>
+      Wszelkie prawa do tej zacnej strony są zastrzeżone.<br />
+      <a class="footer__navigation" href="#top">Wróć na górę</a>
     </footer>
     <script src="main.js"></script>
   </body>
