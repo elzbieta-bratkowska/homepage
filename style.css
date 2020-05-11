@@ -2,32 +2,27 @@ body {
   background: #ffffff;
 }
 
-main {
-  width: 900px;
-  margin: auto;
-}
-h2 {
-  text-decoration: underline;
-  margin-top: 10px;
-  color: rgb(15, 107, 103);
-}
-
-h3 {
-  margin-top: 23px;
-  margin-bottom: 3px;
-  color: rgb(15, 107, 103);
-}
-
-p {
-  margin-top: 4px;
-}
-
 footer {
   width: 900px;
   margin: 20px auto;
   border-top: 4px dotted rgba(171, 155, 179, 0.333);
   padding-top: 10px;
   text-align: right;
+}
+
+h2 {
+  text-decoration: underline;
+  margin-top: 10px;
+  color: rgb(15, 107, 103);
+}
+
+main {
+  width: 900px;
+  margin: auto;
+}
+
+p {
+  margin-top: 4px;
 }
 
 .footer__navigation {
@@ -39,13 +34,13 @@ footer {
   margin: 0;
 }
 
-.heading {
+.header__title {
   color: #178888;
   -webkit-text-stroke: 1px rgb(63, 61, 61);
   text-align: center;
 }
 
-.heading__image {
+.header-image-container__image {
   width: 100%;
 }
 
@@ -100,14 +95,22 @@ footer {
   width: 900px;
 }
 
-.quote {
+.quotes__title {
+  margin-top: 23px;
+  margin-bottom: 3px;
+  color: rgb(15, 107, 103);
+}
+
+.quote__title {
   margin-top: 12px;
   margin-bottom: 0px;
   color: rgb(185, 0, 93);
 }
+
 .relaxation {
   margin-top: 50px;
 }
+
 .relaxation__puppy {
   width: 40%;
 }
