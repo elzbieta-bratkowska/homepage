@@ -3,7 +3,7 @@ body {
 }
 
 footer {
-  width: 900px;
+  max-width: 900px;
   margin: 20px auto;
   border-top: 4px dotted rgba(171, 155, 179, 0.333);
   padding-top: 10px;
@@ -17,7 +17,7 @@ h2 {
 }
 
 main {
-  width: 900px;
+  max-width: 900px;
   margin: auto;
 }
 
@@ -68,17 +68,17 @@ p {
 
 .navigation {
   width: fit-content;
-  margin: 10px auto;
+  margin: auto;
 }
 
 .navigation__link {
   color: #86283d;
   padding: 10px;
   background: linear-gradient(#f1eeee 70%, #be6272);
-  margin: 10px 20px;
+  margin: 0 20px;
   text-decoration: none;
   display: inline-block;
-  border-radius: 7px;
+  border-radius: 0 0 7px 7px;
 }
 .navigation__link:hover {
   color: #cf7f91;
